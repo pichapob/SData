@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://DataAudit.BRHService/" targetNamespace="http://DataAudit.BRHService/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CheckingConnection" type="tns:CheckingConnection" />
+  <xs:element name="CheckingConnectionResponse" type="tns:CheckingConnectionResponse" />
+  <xs:element name="GetAddressAll" type="tns:GetAddressAll" />
+  <xs:element name="GetAddressAllResponse" type="tns:GetAddressAllResponse" />
+  <xs:element name="GetAncWithDateServ" type="tns:GetAncWithDateServ" />
+  <xs:element name="GetAncWithDateServResponse" type="tns:GetAncWithDateServResponse" />
+  <xs:element name="GetChronicAll" type="tns:GetChronicAll" />
+  <xs:element name="GetChronicAllResponse" type="tns:GetChronicAllResponse" />
+  <xs:element name="GetDeathWithDateServ" type="tns:GetDeathWithDateServ" />
+  <xs:element name="GetDeathWithDateServResponse" type="tns:GetDeathWithDateServResponse" />
+  <xs:element name="GetDiagnosisipdWithDateAdmit" type="tns:GetDiagnosisipdWithDateAdmit" />
+  <xs:element name="GetDiagnosisipdWithDateAdmitResponse" type="tns:GetDiagnosisipdWithDateAdmitResponse" />
+  <xs:element name="GetDiagnosisopdWithDateServ" type="tns:GetDiagnosisopdWithDateServ" />
+  <xs:element name="GetDiagnosisopdWithDateServResponse" type="tns:GetDiagnosisopdWithDateServResponse" />
+  <xs:element name="GetDrugOPDWithDateServ" type="tns:GetDrugOPDWithDateServ" />
+  <xs:element name="GetDrugOPDWithDateServResponse" type="tns:GetDrugOPDWithDateServResponse" />
+  <xs:element name="GetEpiWithDateServ" type="tns:GetEpiWithDateServ" />
+  <xs:element name="GetEpiWithDateServResponse" type="tns:GetEpiWithDateServResponse" />
+  <xs:element name="GetNcdscreenWithDateServ" type="tns:GetNcdscreenWithDateServ" />
+  <xs:element name="GetNcdscreenWithDateServResponse" type="tns:GetNcdscreenWithDateServResponse" />
+  <xs:element name="GetPersonAll" type="tns:GetPersonAll" />
+  <xs:element name="GetPersonAllResponse" type="tns:GetPersonAllResponse" />
+  <xs:element name="GetPersonWithTypeArea13" type="tns:GetPersonWithTypeArea13" />
+  <xs:element name="GetPersonWithTypeArea13Response" type="tns:GetPersonWithTypeArea13Response" />
+  <xs:element name="GetProcedureOPDWithDateServ" type="tns:GetProcedureOPDWithDateServ" />
+  <xs:element name="GetProcedureOPDWithDateServResponse" type="tns:GetProcedureOPDWithDateServResponse" />
+  <xs:element name="GetServiceWithDateServ" type="tns:GetServiceWithDateServ" />
+  <xs:element name="GetServiceWithDateServResponse" type="tns:GetServiceWithDateServResponse" />
+  <xs:element name="GetSpecialppWithDateServ" type="tns:GetSpecialppWithDateServ" />
+  <xs:element name="GetSpecialppWithDateServResponse" type="tns:GetSpecialppWithDateServResponse" />
+  <xs:complexType name="GetEpiWithDateServ">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="STARTDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="ENDDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRETKEY" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetEpiWithDateServResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:epi" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="epi">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DATE_SERV" type="xs:string" />
+      <xs:element minOccurs="0" name="d_UPDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="PID" type="xs:string" />
+      <xs:element minOccurs="0" name="PROVIDER" type="xs:string" />
+      <xs:element minOccurs="0" name="SEQ" type="xs:string" />
+      <xs:element minOccurs="0" name="VACCINEPLACE" type="xs:string" />
+      <xs:element minOccurs="0" name="VACCINETYPE" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDrugOPDWithDateServ">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRETKEY" type="xs:string" />
+      <xs:element minOccurs="0" name="STARTDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="ENDDATE" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDrugOPDWithDateServResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:drugOpd" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="drugOpd">
+    <xs:sequence>
+      <xs:element name="AMOUNT" type="xs:int" />
+      <xs:element minOccurs="0" name="CLINIC" type="xs:string" />
+      <xs:element minOccurs="0" name="DATE_SERV" type="xs:string" />
+      <xs:element minOccurs="0" name="DIDSTD" type="xs:string" />
+      <xs:element minOccurs="0" name="DNAME" type="xs:string" />
+      <xs:element name="DRUGCOST" type="xs:double" />
+      <xs:element name="DRUGPRICE" type="xs:double" />
+      <xs:element minOccurs="0" name="d_UPDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="PID" type="xs:string" />
+      <xs:element minOccurs="0" name="PROVIDER" type="xs:string" />
+      <xs:element minOccurs="0" name="SEQ" type="xs:string" />
+      <xs:element minOccurs="0" name="UNIT" type="xs:string" />
+      <xs:element minOccurs="0" name="UNIT_PACKING" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetProcedureOPDWithDateServ">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRETKEY" type="xs:string" />
+      <xs:element minOccurs="0" name="STARTDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="ENDDATE" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetProcedureOPDWithDateServResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:procedureOpd" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="procedureOpd">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLINIC" type="xs:string" />
+      <xs:element minOccurs="0" name="DATE_SERV" type="xs:string" />
+      <xs:element minOccurs="0" name="d_UPDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="PID" type="xs:string" />
+      <xs:element minOccurs="0" name="PROCEDCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="PROVIDER" type="xs:string" />
+      <xs:element minOccurs="0" name="SEQ" type="xs:string" />
+      <xs:element name="SERVICEPRICE" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CheckingConnection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRET_KEY" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CheckingConnectionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetServiceWithDateServ">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRETKEY" type="xs:string" />
+      <xs:element minOccurs="0" name="STARTDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="ENDDATE" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetServiceWithDateServResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:service" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="service">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACTUALPAY" type="xs:string" />
+      <xs:element minOccurs="0" name="BTEMP" type="xs:string" />
+      <xs:element minOccurs="0" name="CAUSEIN" type="xs:string" />
+      <xs:element minOccurs="0" name="CAUSEOUT" type="xs:string" />
+      <xs:element minOccurs="0" name="CHIEFCOMP" type="xs:string" />
+      <xs:element minOccurs="0" name="COST" type="xs:string" />
+      <xs:element minOccurs="0" name="DATE_SERV" type="xs:string" />
+      <xs:element minOccurs="0" name="DBP" type="xs:string" />
+      <xs:element minOccurs="0" name="d_UPDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="HN" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="INSID" type="xs:string" />
+      <xs:element minOccurs="0" name="INSTYPE" type="xs:string" />
+      <xs:element minOccurs="0" name="INTIME" type="xs:string" />
+      <xs:element minOccurs="0" name="LOCATION" type="xs:string" />
+      <xs:element minOccurs="0" name="MAIN" type="xs:string" />
+      <xs:element minOccurs="0" name="PAYPRICE" type="xs:string" />
+      <xs:element minOccurs="0" name="PID" type="xs:string" />
+      <xs:element minOccurs="0" name="PR" type="xs:string" />
+      <xs:element minOccurs="0" name="PRICE" type="xs:string" />
+      <xs:element minOccurs="0" name="REFERINHOSP" type="xs:string" />
+      <xs:element minOccurs="0" name="REFEROUTHOSP" type="xs:string" />
+      <xs:element minOccurs="0" name="RR" type="xs:string" />
+      <xs:element minOccurs="0" name="SBP" type="xs:string" />
+      <xs:element minOccurs="0" name="SEQ" type="xs:string" />
+      <xs:element minOccurs="0" name="SERVPLACE" type="xs:string" />
+      <xs:element minOccurs="0" name="TIME_SERV" type="xs:string" />
+      <xs:element minOccurs="0" name="TYPEIN" type="xs:string" />
+      <xs:element minOccurs="0" name="TYPEOUT" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetSpecialppWithDateServ">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="STARTDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="ENDDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRETKEY" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetSpecialppWithDateServResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:specialpp" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="specialpp">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DATE_SERV" type="xs:string" />
+      <xs:element minOccurs="0" name="d_UPDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="PID" type="xs:string" />
+      <xs:element minOccurs="0" name="PPSPECIAL" type="xs:string" />
+      <xs:element minOccurs="0" name="PPSPLACE" type="xs:string" />
+      <xs:element minOccurs="0" name="PROVIDER" type="xs:string" />
+      <xs:element minOccurs="0" name="SEQ" type="xs:string" />
+      <xs:element minOccurs="0" name="SERVPLACE" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAncWithDateServ">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="STARTDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="ENDDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRETKEY" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAncWithDateServResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:anc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="anc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ANCNO" type="xs:string" />
+      <xs:element minOccurs="0" name="ANCPLACE" type="xs:string" />
+      <xs:element minOccurs="0" name="ANCRESULT" type="xs:string" />
+      <xs:element minOccurs="0" name="DATE_SERV" type="xs:string" />
+      <xs:element minOccurs="0" name="d_UPDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="GA" type="xs:string" />
+      <xs:element minOccurs="0" name="GRAVIDA" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="PID" type="xs:string" />
+      <xs:element minOccurs="0" name="PROVIDER" type="xs:string" />
+      <xs:element minOccurs="0" name="SEQ" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetPersonAll">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRETKEY" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetPersonAllResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:person" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="person">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ABOGROUP" type="xs:string" />
+      <xs:element minOccurs="0" name="BIRTH" type="xs:string" />
+      <xs:element minOccurs="0" name="CID" type="xs:string" />
+      <xs:element minOccurs="0" name="COUPLE" type="xs:string" />
+      <xs:element minOccurs="0" name="DDISCHARGE" type="xs:string" />
+      <xs:element minOccurs="0" name="d_UPDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="discharge" type="xs:string" />
+      <xs:element minOccurs="0" name="EDUCATION" type="xs:string" />
+      <xs:element minOccurs="0" name="FATHER" type="xs:string" />
+      <xs:element minOccurs="0" name="FSTATUS" type="xs:string" />
+      <xs:element minOccurs="0" name="HID" type="xs:string" />
+      <xs:element minOccurs="0" name="HN" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="LABOR" type="xs:string" />
+      <xs:element minOccurs="0" name="LNAME" type="xs:string" />
+      <xs:element minOccurs="0" name="MOTHER" type="xs:string" />
+      <xs:element minOccurs="0" name="MOVEIN" type="xs:string" />
+      <xs:element minOccurs="0" name="mstatus" type="xs:string" />
+      <xs:element minOccurs="0" name="NAME" type="xs:string" />
+      <xs:element minOccurs="0" name="NATION" type="xs:string" />
+      <xs:element minOccurs="0" name="OCCUPATION_NEW" type="xs:string" />
+      <xs:element minOccurs="0" name="OCCUPATION_OLD" type="xs:string" />
+      <xs:element minOccurs="0" name="PASSPORT" type="xs:string" />
+      <xs:element minOccurs="0" name="PID" type="xs:string" />
+      <xs:element minOccurs="0" name="PRENAME" type="xs:string" />
+      <xs:element minOccurs="0" name="RACE" type="xs:string" />
+      <xs:element minOccurs="0" name="RELIGION" type="xs:string" />
+      <xs:element minOccurs="0" name="RHGROUP" type="xs:string" />
+      <xs:element minOccurs="0" name="SEX" type="xs:string" />
+      <xs:element minOccurs="0" name="TYPEAREA" type="xs:string" />
+      <xs:element minOccurs="0" name="VSTATUS" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetNcdscreenWithDateServ">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="STARTDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="ENDDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRETKEY" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetNcdscreenWithDateServResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:ncdscreen" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ncdscreen">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="alcohol" type="xs:string" />
+      <xs:element minOccurs="0" name="BSTEST" type="xs:string" />
+      <xs:element name="bslevel" type="xs:double" />
+      <xs:element minOccurs="0" name="DATE_SERV" type="xs:string" />
+      <xs:element minOccurs="0" name="d_UPDATE" type="xs:string" />
+      <xs:element name="dbp_1" type="xs:int" />
+      <xs:element name="dbp_2" type="xs:int" />
+      <xs:element minOccurs="0" name="dmfamily" type="xs:string" />
+      <xs:element name="HEIGHT" type="xs:int" />
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="htfamily" type="xs:string" />
+      <xs:element minOccurs="0" name="PID" type="xs:string" />
+      <xs:element minOccurs="0" name="PROVIDER" type="xs:string" />
+      <xs:element minOccurs="0" name="SCREENPLACE" type="xs:string" />
+      <xs:element minOccurs="0" name="SEQ" type="xs:string" />
+      <xs:element minOccurs="0" name="SERVPLACE" type="xs:string" />
+      <xs:element name="sbp_1" type="xs:int" />
+      <xs:element name="sbp_2" type="xs:int" />
+      <xs:element minOccurs="0" name="smoke" type="xs:string" />
+      <xs:element name="WAIST_CM" type="xs:int" />
+      <xs:element name="WEIGHT" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetChronicAll">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRETKEY" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetChronicAllResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:chronic" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="chronic">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CHRONIC" type="xs:string" />
+      <xs:element minOccurs="0" name="DATE_DIAG" type="xs:string" />
+      <xs:element minOccurs="0" name="DATE_DISCH" type="xs:string" />
+      <xs:element minOccurs="0" name="d_UPDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSP_DX" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSP_RX" type="xs:string" />
+      <xs:element minOccurs="0" name="PID" type="xs:string" />
+      <xs:element minOccurs="0" name="TYPEDISCH" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDiagnosisipdWithDateAdmit">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="STARTDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="ENDDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRETKEY" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDiagnosisipdWithDateAdmitResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:diagnosisIpd" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="diagnosisIpd">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AN" type="xs:string" />
+      <xs:element minOccurs="0" name="DATETIME_ADMIT" type="xs:string" />
+      <xs:element minOccurs="0" name="DIAGCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="DIAGTYPE" type="xs:string" />
+      <xs:element minOccurs="0" name="d_UPDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="PID" type="xs:string" />
+      <xs:element minOccurs="0" name="PROVIDER" type="xs:string" />
+      <xs:element minOccurs="0" name="WARDDIAG" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAddressAll">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRETKEY" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAddressAllResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:address" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="address">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ADDRESSTYPE" type="xs:string" />
+      <xs:element minOccurs="0" name="AMPUR" type="xs:string" />
+      <xs:element minOccurs="0" name="CHANGWAT" type="xs:string" />
+      <xs:element minOccurs="0" name="CONDO" type="xs:string" />
+      <xs:element minOccurs="0" name="d_UPDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="HOUSENO" type="xs:string" />
+      <xs:element minOccurs="0" name="HOUSETYPE" type="xs:string" />
+      <xs:element minOccurs="0" name="HOUSE_ID" type="xs:string" />
+      <xs:element minOccurs="0" name="MOBILE" type="xs:string" />
+      <xs:element minOccurs="0" name="PID" type="xs:string" />
+      <xs:element minOccurs="0" name="ROAD" type="xs:string" />
+      <xs:element minOccurs="0" name="ROOMNO" type="xs:string" />
+      <xs:element minOccurs="0" name="SOIMAIN" type="xs:string" />
+      <xs:element minOccurs="0" name="SOISUB" type="xs:string" />
+      <xs:element minOccurs="0" name="TAMBON" type="xs:string" />
+      <xs:element minOccurs="0" name="TELEPHONE" type="xs:string" />
+      <xs:element minOccurs="0" name="VILLAGE" type="xs:string" />
+      <xs:element minOccurs="0" name="VILLANAME" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDeathWithDateServ">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="STARTDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="ENDDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRETKEY" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDeathWithDateServResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:death" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="death">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AN" type="xs:string" />
+      <xs:element minOccurs="0" name="CDEATH" type="xs:string" />
+      <xs:element minOccurs="0" name="CDEATH_B" type="xs:string" />
+      <xs:element minOccurs="0" name="CDEATH_C" type="xs:string" />
+      <xs:element minOccurs="0" name="CDEATH_D" type="xs:string" />
+      <xs:element minOccurs="0" name="cdeath_a" type="xs:string" />
+      <xs:element minOccurs="0" name="d_UPDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="ddeath" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSPDEATH" type="xs:string" />
+      <xs:element minOccurs="0" name="ODISEASE" type="xs:string" />
+      <xs:element minOccurs="0" name="PDEATH" type="xs:string" />
+      <xs:element minOccurs="0" name="PID" type="xs:string" />
+      <xs:element minOccurs="0" name="PREGDEATH" type="xs:string" />
+      <xs:element minOccurs="0" name="PROVIDER" type="xs:string" />
+      <xs:element minOccurs="0" name="SEQ" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetPersonWithTypeArea13">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRETKEY" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetPersonWithTypeArea13Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:person" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDiagnosisopdWithDateServ">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="STARTDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="ENDDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="SECRETKEY" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDiagnosisopdWithDateServResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:diagnosisOpd" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="diagnosisOpd">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLINIC" type="xs:string" />
+      <xs:element minOccurs="0" name="DATE_SERV" type="xs:string" />
+      <xs:element minOccurs="0" name="DIAGCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="DIAGTYPE" type="xs:string" />
+      <xs:element minOccurs="0" name="d_UPDATE" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSPCODE" type="xs:string" />
+      <xs:element minOccurs="0" name="PID" type="xs:string" />
+      <xs:element minOccurs="0" name="PROVIDER" type="xs:string" />
+      <xs:element minOccurs="0" name="SEQ" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

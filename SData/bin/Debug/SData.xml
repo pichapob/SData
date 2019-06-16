@@ -1,0 +1,582 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SData
+</name>
+</assembly>
+<members>
+<member name="P:SData.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.About_16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.About_icon">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.add16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.app_info">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.blank">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.check16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.cross16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.database_config">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Datalist32">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.excel24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Export_logo32">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.graph16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.hdc32">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Home_icon48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.login">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Medical_Nurse_Male_Light_icon48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.New_16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Number_1_icon16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Number_2_icon16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Number_3_icon16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Number_4_icon16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Number_5_icon16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Number_6_icon16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Number_7_icon16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Number_8_icon16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Number_8_icon24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.nurse_icon48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.OldpersonLogo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.pensil16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.report32">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.SDataLogo44">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.setting32">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.studentLogo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.sync_icon16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.tools_setting_32">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SData.My.Resources.Resources.Upgrade_logo32">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:SData.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:SData.BRHServiceDataAudit.chronic.CHRONIC">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.chronic.DATE_DIAG">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.chronic.DATE_DISCH">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.chronic.d_UPDATE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.chronic.HOSPCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.chronic.HOSP_DX">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.chronic.HOSP_RX">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.chronic.PID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.chronic.TYPEDISCH">
+	<remarks/>
+</member><member name="T:SData.BRHServiceDataAudit.chronic">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.alcohol">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.BSTEST">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.bslevel">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.DATE_SERV">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.d_UPDATE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.dbp_1">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.dbp_2">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.dmfamily">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.HEIGHT">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.HOSPCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.htfamily">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.PID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.PROVIDER">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.SCREENPLACE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.SEQ">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.SERVPLACE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.sbp_1">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.sbp_2">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.smoke">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.WAIST_CM">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.ncdscreen.WEIGHT">
+	<remarks/>
+</member><member name="T:SData.BRHServiceDataAudit.ncdscreen">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.epi.DATE_SERV">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.epi.d_UPDATE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.epi.HOSPCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.epi.PID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.epi.PROVIDER">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.epi.SEQ">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.epi.VACCINEPLACE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.epi.VACCINETYPE">
+	<remarks/>
+</member><member name="T:SData.BRHServiceDataAudit.epi">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisIpd.AN">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisIpd.DATETIME_ADMIT">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisIpd.DIAGCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisIpd.DIAGTYPE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisIpd.d_UPDATE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisIpd.HOSPCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisIpd.PID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisIpd.PROVIDER">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisIpd.WARDDIAG">
+	<remarks/>
+</member><member name="T:SData.BRHServiceDataAudit.diagnosisIpd">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisOpd.CLINIC">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisOpd.DATE_SERV">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisOpd.DIAGCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisOpd.DIAGTYPE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisOpd.d_UPDATE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisOpd.HOSPCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisOpd.PID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisOpd.PROVIDER">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.diagnosisOpd.SEQ">
+	<remarks/>
+</member><member name="T:SData.BRHServiceDataAudit.diagnosisOpd">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.anc.ANCNO">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.anc.ANCPLACE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.anc.ANCRESULT">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.anc.DATE_SERV">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.anc.d_UPDATE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.anc.GA">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.anc.GRAVIDA">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.anc.HOSPCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.anc.PID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.anc.PROVIDER">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.anc.SEQ">
+	<remarks/>
+</member><member name="T:SData.BRHServiceDataAudit.anc">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.specialpp.DATE_SERV">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.specialpp.d_UPDATE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.specialpp.HOSPCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.specialpp.PID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.specialpp.PPSPECIAL">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.specialpp.PPSPLACE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.specialpp.PROVIDER">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.specialpp.SEQ">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.specialpp.SERVPLACE">
+	<remarks/>
+</member><member name="T:SData.BRHServiceDataAudit.specialpp">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.procedureOpd.CLINIC">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.procedureOpd.DATE_SERV">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.procedureOpd.d_UPDATE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.procedureOpd.HOSPCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.procedureOpd.PID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.procedureOpd.PROCEDCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.procedureOpd.PROVIDER">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.procedureOpd.SEQ">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.procedureOpd.SERVICEPRICE">
+	<remarks/>
+</member><member name="T:SData.BRHServiceDataAudit.procedureOpd">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.drugOpd.AMOUNT">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.drugOpd.CLINIC">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.drugOpd.DATE_SERV">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.drugOpd.DIDSTD">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.drugOpd.DNAME">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.drugOpd.DRUGCOST">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.drugOpd.DRUGPRICE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.drugOpd.d_UPDATE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.drugOpd.HOSPCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.drugOpd.PID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.drugOpd.PROVIDER">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.drugOpd.SEQ">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.drugOpd.UNIT">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.drugOpd.UNIT_PACKING">
+	<remarks/>
+</member><member name="T:SData.BRHServiceDataAudit.drugOpd">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.ACTUALPAY">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.BTEMP">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.CAUSEIN">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.CAUSEOUT">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.CHIEFCOMP">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.COST">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.DATE_SERV">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.DBP">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.d_UPDATE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.HN">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.HOSPCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.INSID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.INSTYPE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.INTIME">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.LOCATION">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.MAIN">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.PAYPRICE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.PID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.PR">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.PRICE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.REFERINHOSP">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.REFEROUTHOSP">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.RR">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.SBP">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.SEQ">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.SERVPLACE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.TIME_SERV">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.TYPEIN">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.service.TYPEOUT">
+	<remarks/>
+</member><member name="T:SData.BRHServiceDataAudit.service">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.AN">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.CDEATH">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.CDEATH_B">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.CDEATH_C">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.CDEATH_D">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.cdeath_a">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.d_UPDATE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.ddeath">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.HOSPCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.HOSPDEATH">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.ODISEASE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.PDEATH">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.PID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.PREGDEATH">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.PROVIDER">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.death.SEQ">
+	<remarks/>
+</member><member name="T:SData.BRHServiceDataAudit.death">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.ADDRESSTYPE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.AMPUR">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.CHANGWAT">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.CONDO">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.d_UPDATE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.HOSPCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.HOUSENO">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.HOUSETYPE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.HOUSE_ID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.MOBILE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.PID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.ROAD">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.ROOMNO">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.SOIMAIN">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.SOISUB">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.TAMBON">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.TELEPHONE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.VILLAGE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.address.VILLANAME">
+	<remarks/>
+</member><member name="T:SData.BRHServiceDataAudit.address">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.ABOGROUP">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.BIRTH">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.CID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.COUPLE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.DDISCHARGE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.d_UPDATE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.discharge">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.EDUCATION">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.FATHER">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.FSTATUS">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.HID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.HN">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.HOSPCODE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.LABOR">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.LNAME">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.MOTHER">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.MOVEIN">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.mstatus">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.NAME">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.NATION">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.OCCUPATION_NEW">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.OCCUPATION_OLD">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.PASSPORT">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.PID">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.PRENAME">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.RACE">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.RELIGION">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.RHGROUP">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.SEX">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.TYPEAREA">
+	<remarks/>
+</member><member name="P:SData.BRHServiceDataAudit.person.VSTATUS">
+	<remarks/>
+</member><member name="T:SData.BRHServiceDataAudit.person">
+	<remarks/>
+</member>
+</members>
+</doc>

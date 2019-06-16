@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://DataAudit.BRHService/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="DataAuditService" targetNamespace="http://DataAudit.BRHService/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://203.157.162.18:8080/BRHService/DataAuditService?xsd=1" namespace="http://DataAudit.BRHService/" />
+    </xsd:schema>
+  </types>
+  <message name="CheckingConnection">
+    <part name="parameters" element="tns:CheckingConnection" />
+  </message>
+  <message name="CheckingConnectionResponse">
+    <part name="parameters" element="tns:CheckingConnectionResponse" />
+  </message>
+  <message name="GetChronicAll">
+    <part name="parameters" element="tns:GetChronicAll" />
+  </message>
+  <message name="GetChronicAllResponse">
+    <part name="parameters" element="tns:GetChronicAllResponse" />
+  </message>
+  <message name="GetPersonAll">
+    <part name="parameters" element="tns:GetPersonAll" />
+  </message>
+  <message name="GetPersonAllResponse">
+    <part name="parameters" element="tns:GetPersonAllResponse" />
+  </message>
+  <message name="GetAddressAll">
+    <part name="parameters" element="tns:GetAddressAll" />
+  </message>
+  <message name="GetAddressAllResponse">
+    <part name="parameters" element="tns:GetAddressAllResponse" />
+  </message>
+  <message name="GetDeathWithDateServ">
+    <part name="parameters" element="tns:GetDeathWithDateServ" />
+  </message>
+  <message name="GetDeathWithDateServResponse">
+    <part name="parameters" element="tns:GetDeathWithDateServResponse" />
+  </message>
+  <message name="GetServiceWithDateServ">
+    <part name="parameters" element="tns:GetServiceWithDateServ" />
+  </message>
+  <message name="GetServiceWithDateServResponse">
+    <part name="parameters" element="tns:GetServiceWithDateServResponse" />
+  </message>
+  <message name="GetDrugOPDWithDateServ">
+    <part name="parameters" element="tns:GetDrugOPDWithDateServ" />
+  </message>
+  <message name="GetDrugOPDWithDateServResponse">
+    <part name="parameters" element="tns:GetDrugOPDWithDateServResponse" />
+  </message>
+  <message name="GetProcedureOPDWithDateServ">
+    <part name="parameters" element="tns:GetProcedureOPDWithDateServ" />
+  </message>
+  <message name="GetProcedureOPDWithDateServResponse">
+    <part name="parameters" element="tns:GetProcedureOPDWithDateServResponse" />
+  </message>
+  <message name="GetSpecialppWithDateServ">
+    <part name="parameters" element="tns:GetSpecialppWithDateServ" />
+  </message>
+  <message name="GetSpecialppWithDateServResponse">
+    <part name="parameters" element="tns:GetSpecialppWithDateServResponse" />
+  </message>
+  <message name="GetAncWithDateServ">
+    <part name="parameters" element="tns:GetAncWithDateServ" />
+  </message>
+  <message name="GetAncWithDateServResponse">
+    <part name="parameters" element="tns:GetAncWithDateServResponse" />
+  </message>
+  <message name="GetDiagnosisopdWithDateServ">
+    <part name="parameters" element="tns:GetDiagnosisopdWithDateServ" />
+  </message>
+  <message name="GetDiagnosisopdWithDateServResponse">
+    <part name="parameters" element="tns:GetDiagnosisopdWithDateServResponse" />
+  </message>
+  <message name="GetPersonWithTypeArea13">
+    <part name="parameters" element="tns:GetPersonWithTypeArea13" />
+  </message>
+  <message name="GetPersonWithTypeArea13Response">
+    <part name="parameters" element="tns:GetPersonWithTypeArea13Response" />
+  </message>
+  <message name="GetDiagnosisipdWithDateAdmit">
+    <part name="parameters" element="tns:GetDiagnosisipdWithDateAdmit" />
+  </message>
+  <message name="GetDiagnosisipdWithDateAdmitResponse">
+    <part name="parameters" element="tns:GetDiagnosisipdWithDateAdmitResponse" />
+  </message>
+  <message name="GetEpiWithDateServ">
+    <part name="parameters" element="tns:GetEpiWithDateServ" />
+  </message>
+  <message name="GetEpiWithDateServResponse">
+    <part name="parameters" element="tns:GetEpiWithDateServResponse" />
+  </message>
+  <message name="GetNcdscreenWithDateServ">
+    <part name="parameters" element="tns:GetNcdscreenWithDateServ" />
+  </message>
+  <message name="GetNcdscreenWithDateServResponse">
+    <part name="parameters" element="tns:GetNcdscreenWithDateServResponse" />
+  </message>
+  <portType name="DataAuditService">
+    <operation name="CheckingConnection">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/CheckingConnectionRequest" message="tns:CheckingConnection" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/CheckingConnectionResponse" message="tns:CheckingConnectionResponse" />
+    </operation>
+    <operation name="GetChronicAll">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/GetChronicAllRequest" message="tns:GetChronicAll" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/GetChronicAllResponse" message="tns:GetChronicAllResponse" />
+    </operation>
+    <operation name="GetPersonAll">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/GetPersonAllRequest" message="tns:GetPersonAll" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/GetPersonAllResponse" message="tns:GetPersonAllResponse" />
+    </operation>
+    <operation name="GetAddressAll">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/GetAddressAllRequest" message="tns:GetAddressAll" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/GetAddressAllResponse" message="tns:GetAddressAllResponse" />
+    </operation>
+    <operation name="GetDeathWithDateServ">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/GetDeathWithDateServRequest" message="tns:GetDeathWithDateServ" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/GetDeathWithDateServResponse" message="tns:GetDeathWithDateServResponse" />
+    </operation>
+    <operation name="GetServiceWithDateServ">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/GetServiceWithDateServRequest" message="tns:GetServiceWithDateServ" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/GetServiceWithDateServResponse" message="tns:GetServiceWithDateServResponse" />
+    </operation>
+    <operation name="GetDrugOPDWithDateServ">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/GetDrugOPDWithDateServRequest" message="tns:GetDrugOPDWithDateServ" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/GetDrugOPDWithDateServResponse" message="tns:GetDrugOPDWithDateServResponse" />
+    </operation>
+    <operation name="GetProcedureOPDWithDateServ">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/GetProcedureOPDWithDateServRequest" message="tns:GetProcedureOPDWithDateServ" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/GetProcedureOPDWithDateServResponse" message="tns:GetProcedureOPDWithDateServResponse" />
+    </operation>
+    <operation name="GetSpecialppWithDateServ">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/GetSpecialppWithDateServRequest" message="tns:GetSpecialppWithDateServ" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/GetSpecialppWithDateServResponse" message="tns:GetSpecialppWithDateServResponse" />
+    </operation>
+    <operation name="GetAncWithDateServ">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/GetAncWithDateServRequest" message="tns:GetAncWithDateServ" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/GetAncWithDateServResponse" message="tns:GetAncWithDateServResponse" />
+    </operation>
+    <operation name="GetDiagnosisopdWithDateServ">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/GetDiagnosisopdWithDateServRequest" message="tns:GetDiagnosisopdWithDateServ" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/GetDiagnosisopdWithDateServResponse" message="tns:GetDiagnosisopdWithDateServResponse" />
+    </operation>
+    <operation name="GetPersonWithTypeArea13">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/GetPersonWithTypeArea13Request" message="tns:GetPersonWithTypeArea13" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/GetPersonWithTypeArea13Response" message="tns:GetPersonWithTypeArea13Response" />
+    </operation>
+    <operation name="GetDiagnosisipdWithDateAdmit">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/GetDiagnosisipdWithDateAdmitRequest" message="tns:GetDiagnosisipdWithDateAdmit" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/GetDiagnosisipdWithDateAdmitResponse" message="tns:GetDiagnosisipdWithDateAdmitResponse" />
+    </operation>
+    <operation name="GetEpiWithDateServ">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/GetEpiWithDateServRequest" message="tns:GetEpiWithDateServ" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/GetEpiWithDateServResponse" message="tns:GetEpiWithDateServResponse" />
+    </operation>
+    <operation name="GetNcdscreenWithDateServ">
+      <input wsam:Action="http://DataAudit.BRHService/DataAuditService/GetNcdscreenWithDateServRequest" message="tns:GetNcdscreenWithDateServ" />
+      <output wsam:Action="http://DataAudit.BRHService/DataAuditService/GetNcdscreenWithDateServResponse" message="tns:GetNcdscreenWithDateServResponse" />
+    </operation>
+  </portType>
+  <binding name="DataAuditServicePortBinding" type="tns:DataAuditService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="CheckingConnection">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetChronicAll">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetPersonAll">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetAddressAll">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetDeathWithDateServ">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetServiceWithDateServ">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetDrugOPDWithDateServ">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetProcedureOPDWithDateServ">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetSpecialppWithDateServ">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetAncWithDateServ">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetDiagnosisopdWithDateServ">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetPersonWithTypeArea13">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetDiagnosisipdWithDateAdmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetEpiWithDateServ">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetNcdscreenWithDateServ">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="DataAuditService">
+    <port name="DataAuditServicePort" binding="tns:DataAuditServicePortBinding">
+      <soap:address location="http://203.157.162.18:8080/BRHService/DataAuditService" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,22 @@
+﻿Public Class DEATHEx
+    Dim sql As String
+    Dim sqlf As New SQLManager
+    Public Function ExportDeathWithDateServ(ByVal STARTDATE As String, ByVal ENDDATE As String) As DataTable
+        Dim death As DataTable
+        sql = "SELECT (SELECT hospitalcode FROM opdconfig) AS HOSPCODE,IF(LENGTH(p.person_id)>=6,p.person_id,LPAD(p.person_id,6,0)) AS PID,IF(pd.death_place = 2,pd.hcode,'') AS HOSPDEATH,'' AS AN,'' AS SEQ,DATE_FORMAT(pd.death_date,'%Y%m%d') AS DDEATH,pd.death_diag_1 AS CDEATH_A,pd.death_diag_2 AS CDEATH_B,pd.death_diag_3 AS CDEATH_C,pd.death_diag_4 AS CDEATH_D,pd.odisease AS ODISEASE,IF(pd.death_diag_4 IS NULL OR pd.death_diag_4 = '',IF(pd.death_diag_3 IS NULL OR pd.death_diag_3 = '',IF(pd.death_diag_2 IS NULL OR pd.death_diag_2 = '',pd.death_diag_1,pd.death_diag_2),pd.death_diag_3),pd.death_diag_4) AS CDEATH,IF(pd.nopreg <> 'Y','',IF(pd.wpreg <= 6,1,2)) AS PREGDEATH,'' AS PROVIDER,DATE_FORMAT(pd.last_update,'%Y%m%d%H%i%s') AS D_UPDATE FROM person p INNER JOIN person_death pd  ON pd.person_id = p.person_id WHERE pd.death_diag_1 IS NOT NULL AND pd.death_diag_1<>'' " & _
+        "AND pd.death_date BETWEEN '" & STARTDATE & "' AND '" & ENDDATE & "'"
+        sql &= " UNION ALL "
+        sql &= "SELECT (SELECT hospitalcode FROM opdconfig) AS HOSPCODE,IF(p.person_id IS NULL,p2.hn,IF(LENGTH(p.person_id)>=6,p.person_id,LPAD(p.person_id,6,'0'))) AS PID,p1.death_hospcode AS HOSPDEATH,p1.an AS AN,'' AS SEQ,DATE_FORMAT(p1.death_date,'%Y%m%d') AS DDEATH,p1.death_diag_1 AS CDEATH_A,p1.death_diag_2 AS CDEATH_B,p1.death_diag_3 AS CDEATH_C,p1.death_diag_4 AS CDEATH_D,p1.odisease AS ODISEASE,IF(p1.death_diag_4 IS NULL OR p1.death_diag_4 = '',IF(p1.death_diag_3 IS NULL OR p1.death_diag_3 = '',IF(p1.death_diag_2 IS NULL OR p1.death_diag_2 = '',p1.death_diag_1,p1.death_diag_2),p1.death_diag_3),p1.death_diag_4) AS CDEATH,IF(p1.nopreg<>'Y','',IF(p1.death_preg_42_day = 'Y',1,2)) AS PREGDEATH,'' AS PROVIDER,DATE_FORMAT(p1.last_update,'%Y%m%d%H%i%s') AS D_UPDATE FROM patient p2 INNER JOIN death p1 ON p1.hn = p2.hn LEFT JOIN person p ON p.cid = p2.cid WHERE p1.death_diag_1 IS NOT NULL AND p1.death_diag_1<>'' " & _
+        "AND p1.death_date BETWEEN '" & STARTDATE & "' AND '" & ENDDATE & "'"
+        death = sqlf.QueryAsDatatable(sql)
+        Return death
+    End Function
+    Public Function ExportDeathWithDUpdate(ByVal STARTDATE As String, ByVal ENDDATE As String) As DataTable
+        Dim death As DataTable
+        sql = "SELECT (SELECT hospitalcode FROM opdconfig) AS HOSPCODE,IF(LENGTH(p.person_id)>=6,p.person_id,LPAD(p.person_id,6,0)) AS PID,IF(pd.death_place = 2,pd.hcode,'') AS HOSPDEATH,'' AS AN,'' AS SEQ,DATE_FORMAT(pd.death_date,'%Y%m%d') AS DDEATH,pd.death_diag_1 AS CDEATH_A,pd.death_diag_2 AS CDEATH_B,pd.death_diag_3 AS CDEATH_C,pd.death_diag_4 AS CDEATH_D,pd.odisease AS ODISEASE,IF(pd.death_diag_4 IS NULL OR pd.death_diag_4 = '',IF(pd.death_diag_3 IS NULL OR pd.death_diag_3 = '',IF(pd.death_diag_2 IS NULL OR pd.death_diag_2 = '',pd.death_diag_1,pd.death_diag_2),pd.death_diag_3),pd.death_diag_4) AS CDEATH,IF(pd.nopreg <> 'Y','',IF(pd.wpreg <= 6,1,2)) AS PREGDEATH,'' AS PROVIDER,DATE_FORMAT(pd.last_update,'%Y%m%d%H%i%s') AS D_UPDATE FROM person p INNER JOIN person_death pd  ON pd.person_id = p.person_id WHERE pd.death_diag_1 IS NOT NULL AND pd.death_diag_1<>'' AND DATE(pd.last_update) BETWEEN '" & STARTDATE & "' AND '" & ENDDATE & "'"
+        sql &= " UNION ALL "
+        sql &= "SELECT (SELECT hospitalcode FROM opdconfig) AS HOSPCODE,IF(p.person_id IS NULL,p2.hn,IF(LENGTH(p.person_id)>=6,p.person_id,LPAD(p.person_id,6,'0'))) AS PID,p1.death_hospcode AS HOSPDEATH,p1.an AS AN,'' AS SEQ,DATE_FORMAT(p1.death_date,'%Y%m%d') AS DDEATH,p1.death_diag_1 AS CDEATH_A,p1.death_diag_2 AS CDEATH_B,p1.death_diag_3 AS CDEATH_C,p1.death_diag_4 AS CDEATH_D,p1.odisease AS ODISEASE,IF(p1.death_diag_4 IS NULL OR p1.death_diag_4 = '',IF(p1.death_diag_3 IS NULL OR p1.death_diag_3 = '',IF(p1.death_diag_2 IS NULL OR p1.death_diag_2 = '',p1.death_diag_1,p1.death_diag_2),p1.death_diag_3),p1.death_diag_4) AS CDEATH,IF(p1.nopreg<>'Y','',IF(p1.death_preg_42_day = 'Y',1,2)) AS PREGDEATH,'' AS PROVIDER,DATE_FORMAT(p1.last_update,'%Y%m%d%H%i%s') AS D_UPDATE FROM patient p2 INNER JOIN death p1 ON p1.hn = p2.hn LEFT JOIN person p ON p.cid = p2.cid WHERE p1.death_diag_1 IS NOT NULL AND p1.death_diag_1<>'' AND DATE(p1.last_update) BETWEEN '" & STARTDATE & "' AND '" & ENDDATE & "'"
+        death = sqlf.QueryAsDatatable(sql)
+        Return death
+    End Function
+End Class

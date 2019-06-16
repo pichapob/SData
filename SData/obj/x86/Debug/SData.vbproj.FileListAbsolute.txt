@@ -1,0 +1,98 @@
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\bin\Debug\SData.exe
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\bin\Debug\SData.pdb
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\bin\Debug\SData.xml
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\obj\x86\Debug\SData.Resources.resources
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\obj\x86\Debug\SData.exe.licenses
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\obj\x86\Debug\SData.exe
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\obj\x86\Debug\SData.xml
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\obj\x86\Debug\SData.pdb
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\obj\x86\Debug\SData.frmMain.resources
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\obj\x86\Debug\SData.frmWhaIsNew.resources
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\obj\x86\Debug\SData.frmAbout.resources
+C:\Users\SMART-DEV\AppData\Local\Temporary Projects\SData\obj\x86\Debug\SData.frmLogin.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.exe
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.xml
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.pdb
+D:\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\SData.exe
+D:\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\SData.pdb
+D:\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\SData.xml
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmAbout.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmLogin.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmMain.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmWhaIsNew.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.Resources.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.exe.licenses
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmConnectionSetting.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\SData.exe.config
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmUpgradeStructure.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmExportOldPersonVission.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmExportStudentVission.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.vbproj.ResolveComReference.cache
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmExportDataCorrect.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\Ionic.Zip.dll
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmRepMotherAndChild.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmGetDateStartEnd.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmRepEH.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmRepEIP.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmGetQuarter.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmVccElseware.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmVccelsewareInsert.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmRepQOF.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmExport50F.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.vbproj.GenerateResource.Cache
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmRepOlder.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmSelectVisit.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmAddSpecialPP.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\Newtonsoft.Json.dll
+D:\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\Newtonsoft.Json.pdb
+D:\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\Newtonsoft.Json.xml
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmDisplayData.resources
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.vbprojResolveAssemblyReference.cache
+D:\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmAccount8.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\SData.exe.config
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.vbproj.ResolveComReference.cache
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.exe
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.xml
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.pdb
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\SData.exe
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\SData.pdb
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\SData.xml
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\Ionic.Zip.dll
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\Newtonsoft.Json.dll
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\Newtonsoft.Json.pdb
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\Newtonsoft.Json.xml
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.vbprojResolveAssemblyReference.cache
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmAddSpecialPP.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmDisplayData.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmGetDateStartEnd.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmGetQuarter.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmSelectVisit.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmAbout.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmAccount8.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmConnectionSetting.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmExport50F.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmExportDataCorrect.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmExportOldPersonVission.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmExportStudentVission.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmLogin.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmMain.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmUpgradeStructure.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmVccelsewareInsert.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmWhaIsNew.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmRepEH.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmRepEIP.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmRepMotherAndChild.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmVccElseware.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmRepOlder.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.frmRepQOF.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.Resources.resources
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.vbproj.GenerateResource.Cache
+E:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.exe.licenses
+G:\Computer\Application Deverlop\Application\SData New Version\SData\SData\bin\Debug\SData.exe.config
+G:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.vbproj.ResolveComReference.cache
+G:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.exe
+G:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.xml
+G:\Computer\Application Deverlop\Application\SData New Version\SData\SData\obj\x86\Debug\SData.pdb

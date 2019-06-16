@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E660FD5A-C699-42ED-A35F-E596899DE638}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SData.My.MyApplication</StartupObject>
+    <RootNamespace>SData</RootNamespace>
+    <AssemblyName>SData</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SData.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SData.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.0.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Json dll\Json100r3\Bin\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Entrities\SharingEntrities.vb" />
+    <Compile Include="GUI\AccForm\frmAddSpecialPP.Designer.vb">
+      <DependentUpon>frmAddSpecialPP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AccForm\frmAddSpecialPP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AccForm\frmDisplayData.Designer.vb">
+      <DependentUpon>frmDisplayData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AccForm\frmDisplayData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AccForm\frmGetDateStartEnd.Designer.vb">
+      <DependentUpon>frmGetDateStartEnd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AccForm\frmGetDateStartEnd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AccForm\frmGetQuarter.Designer.vb">
+      <DependentUpon>frmGetQuarter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AccForm\frmGetQuarter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AccFunction\Export50F.vb" />
+    <Compile Include="GUI\AccFunction\Export50F\ANCEx.vb" />
+    <Compile Include="GUI\AccFunction\Export50F\CHRONICEx.vb" />
+    <Compile Include="GUI\AccFunction\Export50F\DEATHEx.vb" />
+    <Compile Include="GUI\AccFunction\Export50F\EPIEx.vb" />
+    <Compile Include="GUI\AccFunction\Export50F\ExportZip43.vb" />
+    <Compile Include="GUI\AccFunction\Export50F\PERSONEx.vb" />
+    <Compile Include="GUI\AccForm\frmSelectVisit.Designer.vb">
+      <DependentUpon>frmSelectVisit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AccForm\frmSelectVisit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AccFunction\Export50F\SPECIALPPEx.vb" />
+    <Compile Include="GUI\frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmAccount8.Designer.vb">
+      <DependentUpon>frmAccount8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmAccount8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmConnectionSetting.Designer.vb">
+      <DependentUpon>frmConnectionSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmConnectionSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmExport50F.Designer.vb">
+      <DependentUpon>frmExport50F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmExport50F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmExportDataCorrect.Designer.vb">
+      <DependentUpon>frmExportDataCorrect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmExportDataCorrect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmExportOldPersonVission.Designer.vb">
+      <DependentUpon>frmExportOldPersonVission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmExportOldPersonVission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmExportStudentVission.Designer.vb">
+      <DependentUpon>frmExportStudentVission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmExportStudentVission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmUpgradeStructure.Designer.vb">
+      <DependentUpon>frmUpgradeStructure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmUpgradeStructure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmVccelsewareInsert.Designer.vb">
+      <DependentUpon>frmVccelsewareInsert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmVccelsewareInsert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmWhaIsNew.Designer.vb">
+      <DependentUpon>frmWhaIsNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmWhaIsNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ReportForm\frmRepEH.Designer.vb">
+      <DependentUpon>frmRepEH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ReportForm\frmRepEH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ReportForm\frmRepEIP.Designer.vb">
+      <DependentUpon>frmRepEIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ReportForm\frmRepEIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ReportForm\frmRepMotherAndChild.Designer.vb">
+      <DependentUpon>frmRepMotherAndChild.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ReportForm\frmRepMotherAndChild.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmVccElseware.Designer.vb">
+      <DependentUpon>frmVccElseware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmVccElseware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ReportForm\frmRepOlder.Designer.vb">
+      <DependentUpon>frmRepOlder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ReportForm\frmRepOlder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ReportForm\frmRepQOF.Designer.vb">
+      <DependentUpon>frmRepQOF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ReportForm\frmRepQOF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service References\BRHServiceDataAudit\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\AccessoriesFunction.vb" />
+    <Compile Include="Tools\DataCorrectExport.vb" />
+    <Compile Include="Tools\DataCorrectGenerate.vb" />
+    <Compile Include="Tools\export_tools\exportFromCid.vb" />
+    <Compile Include="Tools\SQLManager.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GUI\AccForm\frmAddSpecialPP.resx">
+      <DependentUpon>frmAddSpecialPP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AccForm\frmDisplayData.resx">
+      <DependentUpon>frmDisplayData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AccForm\frmGetDateStartEnd.resx">
+      <DependentUpon>frmGetDateStartEnd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AccForm\frmGetQuarter.resx">
+      <DependentUpon>frmGetQuarter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AccForm\frmSelectVisit.resx">
+      <DependentUpon>frmSelectVisit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmAccount8.resx">
+      <DependentUpon>frmAccount8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmConnectionSetting.resx">
+      <DependentUpon>frmConnectionSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmExport50F.resx">
+      <DependentUpon>frmExport50F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmExportDataCorrect.resx">
+      <DependentUpon>frmExportDataCorrect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmExportOldPersonVission.resx">
+      <DependentUpon>frmExportOldPersonVission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmExportStudentVission.resx">
+      <DependentUpon>frmExportStudentVission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmUpgradeStructure.resx">
+      <DependentUpon>frmUpgradeStructure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmVccelsewareInsert.resx">
+      <DependentUpon>frmVccelsewareInsert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmWhaIsNew.resx">
+      <DependentUpon>frmWhaIsNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ReportForm\frmRepEH.resx">
+      <DependentUpon>frmRepEH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ReportForm\frmRepEIP.resx">
+      <DependentUpon>frmRepEIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ReportForm\frmRepMotherAndChild.resx">
+      <DependentUpon>frmRepMotherAndChild.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmVccElseware.resx">
+      <DependentUpon>frmVccElseware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ReportForm\frmRepOlder.resx">
+      <DependentUpon>frmRepOlder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ReportForm\frmRepQOF.resx">
+      <DependentUpon>frmRepQOF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\BRHServiceDataAudit\DataAuditService.wsdl" />
+    <None Include="Service References\BRHServiceDataAudit\DataAuditService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BRHServiceDataAudit\SData.BRHServiceDataAudit.address.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BRHServiceDataAudit\SData.BRHServiceDataAudit.anc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BRHServiceDataAudit\SData.BRHServiceDataAudit.chronic.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BRHServiceDataAudit\SData.BRHServiceDataAudit.death.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BRHServiceDataAudit\SData.BRHServiceDataAudit.diagnosisIpd.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BRHServiceDataAudit\SData.BRHServiceDataAudit.diagnosisOpd.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BRHServiceDataAudit\SData.BRHServiceDataAudit.drugOpd.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BRHServiceDataAudit\SData.BRHServiceDataAudit.epi.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BRHServiceDataAudit\SData.BRHServiceDataAudit.ncdscreen.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BRHServiceDataAudit\SData.BRHServiceDataAudit.person.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BRHServiceDataAudit\SData.BRHServiceDataAudit.procedureOpd.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BRHServiceDataAudit\SData.BRHServiceDataAudit.service.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BRHServiceDataAudit\SData.BRHServiceDataAudit.specialpp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hdc32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SDataLogo44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools_setting_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upgrade_logo32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export_logo32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OldpersonLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\studentLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Datalist32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BRHServiceDataAudit\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BRHServiceDataAudit\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BRHServiceDataAudit\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BRHServiceDataAudit\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graph16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pensil16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync-icon16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nurse-icon48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medical-Nurse-Male-Light-icon48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home-icon48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number-8-icon24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number-8-icon16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number-7-icon16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number-6-icon16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number-5-icon16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number-4-icon16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number-3-icon16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number-2-icon16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number-1-icon16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
